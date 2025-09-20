@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Tilt from 'react-parallax-tilt';
-import { FaApple, FaGooglePlay, FaGithub, FaStar, FaDownload, FaExpand, FaTimes, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { FaApple, FaGooglePlay, FaGithub, FaStar, FaExpand, FaTimes } from 'react-icons/fa';
 import { getDemoProjectImage, getDemoPhoneImage } from '../utils/generateDemoImages';
 import './Projects.css';
 
@@ -13,10 +13,7 @@ const Projects = ({ projects }) => {
   });
 
   const [selectedProject, setSelectedProject] = useState(null);
-  const [filter, setFilter] = useState('All');
   const [projectImages, setProjectImages] = useState({});
-  const [fullscreenImage, setFullscreenImage] = useState(null);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // Prevent body scroll when modal is open
   useEffect(() => {
@@ -32,37 +29,7 @@ const Projects = ({ projects }) => {
     };
   }, [selectedProject]);
 
-  const platforms = ['All', 'iOS', 'Android', 'Cross-Platform', 'Flutter'];
-  
-  const filteredProjects = filter === 'All' 
-    ? projects?.projects || []
-    : projects?.projects?.filter(p => p.category === filter || p.platform?.includes(filter)) || [];
-
-  // Fullscreen image handlers
-  const openFullscreenImage = (imageUrl, index) => {
-    setFullscreenImage({ url: imageUrl, index });
-    setCurrentImageIndex(index);
-  };
-
-  const closeFullscreenImage = () => {
-    setFullscreenImage(null);
-  };
-
-  const navigateFullscreenImage = (direction) => {
-    if (!selectedProject || !fullscreenImage) return;
-    
-    const images = selectedProject.screenshots || projectImages[selectedProject.id]?.screenshots || [];
-    let newIndex = fullscreenImage.index;
-    
-    if (direction === 'prev') {
-      newIndex = newIndex > 0 ? newIndex - 1 : images.length - 1;
-    } else {
-      newIndex = newIndex < images.length - 1 ? newIndex + 1 : 0;
-    }
-    
-    setFullscreenImage({ url: images[newIndex], index: newIndex });
-    setCurrentImageIndex(newIndex);
-  };
+  const filteredProjects = projects?.projects || [];
 
   // Generate demo images for projects
   useEffect(() => {
@@ -70,14 +37,7 @@ const Projects = ({ projects }) => {
     projects?.projects?.forEach((project, index) => {
       images[project.id] = {
         main: getDemoProjectImage(project.title, index),
-        phone: getDemoPhoneImage(project.title, index),
-        screenshots: [
-          getDemoPhoneImage(`${project.title} - Screen 1`, index),
-          getDemoPhoneImage(`${project.title} - Screen 2`, index + 1),
-          getDemoPhoneImage(`${project.title} - Screen 3`, index + 2),
-          getDemoPhoneImage(`${project.title} - Screen 4`, index + 3),
-          getDemoPhoneImage(`${project.title} - Screen 5`, index + 4),
-        ]
+        phone: getDemoPhoneImage(project.title, index)
       };
     });
     setProjectImages(images);
@@ -88,19 +48,19 @@ const Projects = ({ projects }) => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.05, // Reduced from 0.1
+        staggerChildren: 0.05,
         duration: 0.3,
       },
     },
   };
 
   const itemVariants = {
-    hidden: { y: 20, opacity: 0 }, // Reduced from 50
+    hidden: { y: 20, opacity: 0 },
     visible: {
       y: 0,
       opacity: 1,
       transition: {
-        duration: 0.3, // Fixed duration instead of spring
+        duration: 0.3,
         ease: 'easeOut',
       },
     },
@@ -116,22 +76,7 @@ const Projects = ({ projects }) => {
       >
         <motion.div className="section-header" variants={itemVariants}>
           <span className="section-subtitle">My Portfolio</span>
-          <h2 className="section-title">Personal Projects</h2>
-        </motion.div>
-
-        {/* Filter Buttons */}
-        <motion.div className="filter-buttons" variants={itemVariants}>
-          {platforms.map((platform) => (
-            <motion.button
-              key={platform}
-              className={`filter-btn ${filter === platform ? 'active' : ''}`}
-              onClick={() => setFilter(platform)}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              {platform}
-            </motion.button>
-          ))}
+          <h2 className="section-title">Projects</h2>
         </motion.div>
 
         {/* Projects Grid */}
@@ -142,7 +87,7 @@ const Projects = ({ projects }) => {
               tiltMaxAngleX={5} 
               tiltMaxAngleY={5}
               perspective={1000}
-              glareEnable={false} // Disabled glare for performance
+              glareEnable={false}
               transitionSpeed={2000}
             >
               <motion.div
@@ -284,35 +229,6 @@ const Projects = ({ projects }) => {
                 </div>
 
                 <div className="modal-body">
-                  <div className="modal-images-container">
-                    <div className="modal-images">
-                      {(selectedProject.screenshots || projectImages[selectedProject.id]?.screenshots)?.map((img, i) => (
-                        <div 
-                          key={i} 
-                          className="modal-image-slide"
-                          onClick={() => openFullscreenImage(img, i)}
-                        >
-                          <img src={img} alt={`Screenshot ${i + 1}`} />
-                        </div>
-                      ))}
-                    </div>
-                    {(selectedProject.screenshots || projectImages[selectedProject.id]?.screenshots)?.length > 1 && (
-                      <div className="image-indicators">
-                        {(selectedProject.screenshots || projectImages[selectedProject.id]?.screenshots)?.map((_, i) => (
-                          <span 
-                            key={i} 
-                            className="indicator-dot"
-                            onClick={() => {
-                              const container = document.querySelector('.modal-images');
-                              const slideWidth = container.querySelector('.modal-image-slide').offsetWidth;
-                              container.scrollTo({ left: slideWidth * i, behavior: 'smooth' });
-                            }}
-                          />
-                        ))}
-                      </div>
-                    )}
-                  </div>
-
                   <div className="modal-info">
                     <h3>About This Project</h3>
                     <p>{selectedProject.longDescription || selectedProject.description}</p>
@@ -371,60 +287,6 @@ const Projects = ({ projects }) => {
                 </div>
               </div>
             </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-
-      {/* Fullscreen Image Viewer */}
-      <AnimatePresence>
-        {fullscreenImage && (
-          <motion.div
-            className="image-viewer-overlay"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={closeFullscreenImage}
-          >
-            <div className="image-viewer-container" onClick={(e) => e.stopPropagation()}>
-              <button 
-                className="image-viewer-close" 
-                onClick={closeFullscreenImage}
-              >
-                <FaTimes />
-              </button>
-              
-              {(selectedProject?.screenshots || projectImages[selectedProject?.id]?.screenshots)?.length > 1 && (
-                <>
-                  <button 
-                    className="image-viewer-nav image-viewer-prev"
-                    onClick={() => navigateFullscreenImage('prev')}
-                  >
-                    <FaChevronLeft />
-                  </button>
-                  
-                  <button 
-                    className="image-viewer-nav image-viewer-next"
-                    onClick={() => navigateFullscreenImage('next')}
-                  >
-                    <FaChevronRight />
-                  </button>
-                </>
-              )}
-              
-              <motion.img
-                key={fullscreenImage.url}
-                src={fullscreenImage.url}
-                alt={`Screenshot ${fullscreenImage.index + 1}`}
-                initial={{ scale: 0.8, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                exit={{ scale: 0.8, opacity: 0 }}
-                transition={{ duration: 0.2 }}
-              />
-              
-              <div className="image-viewer-caption">
-                {fullscreenImage.index + 1} / {(selectedProject?.screenshots || projectImages[selectedProject?.id]?.screenshots)?.length || 0}
-              </div>
-            </div>
           </motion.div>
         )}
       </AnimatePresence>

@@ -2,83 +2,31 @@
   "experiences": [
     {
       "id": "1",
-      "position": "Senior Mobile Developer",
-      "company": "TechCorp Solutions",
-      "duration": "Jan 2022 - Present",
-      "location": "San Francisco, CA",
-      "description": "Leading mobile development initiatives for enterprise clients, architecting scalable solutions, and mentoring junior developers. Responsible for the complete lifecycle of mobile applications from conception to deployment.",
+      "position": "Software Engineer",
+      "company": "eSparkbiz Technologies Pvt. Ltd.",
+      "duration": "Jan 2024 – Present",
+      "location": "Ahmedabad, India",
+      "description": "Contributing to the design, development, and deployment of cross-platform mobile applications with focus on performance, offline-first architecture, and secure data management.",
       "responsibilities": [
-        "Led a team of 5 developers in building a fintech app that processed over $10M in transactions",
-        "Reduced app crash rate by 95% through comprehensive testing and code optimization",
-        "Implemented CI/CD pipelines that decreased deployment time by 60%",
-        "Architected modular app structure improving code reusability by 40%",
-        "Mentored 3 junior developers, helping them advance to mid-level positions"
+        "Collaborated with the team to build and maintain a server-driven UI CMS application with offline-first architecture using Drift ORM and SQLite.",
+        "Integrated biometric authentication (Face ID, Fingerprint) with AES-256 encryption for secure access and optimized local data storage.",
+        "Implemented secure credential storage using Google Credential Manager (Android) and iOS Keychain with Associated Domains.",
+        "Configured Codemagic CI/CD pipelines for automated Android and iOS builds and deployment.",
+        "Published and maintained 6+ apps on Google Play Store and 3+ apps on App Store/TestFlight, ensuring production-ready releases."
       ],
-      "technologies": ["Swift", "Kotlin", "Flutter", "Firebase", "AWS", "Jenkins", "Git", "Agile"]
-    },
-    {
-      "id": "2",
-      "position": "Mobile Application Developer",
-      "company": "InnovateTech Inc.",
-      "duration": "Jun 2020 - Dec 2021",
-      "location": "Austin, TX",
-      "description": "Developed and maintained multiple mobile applications for iOS and Android platforms. Collaborated with cross-functional teams to deliver high-quality products on schedule.",
-      "responsibilities": [
-        "Developed 5 mobile applications from scratch, achieving 4.5+ star ratings on app stores",
-        "Integrated third-party APIs and SDKs including payment gateways and analytics tools",
-        "Optimized app performance resulting in 50% faster load times",
-        "Implemented real-time features using WebSocket connections",
-        "Conducted code reviews and maintained coding standards across the team"
-      ],
-      "technologies": ["iOS", "Android", "React Native", "Node.js", "MongoDB", "REST API", "Socket.io"]
-    },
-    {
-      "id": "3",
-      "position": "iOS Developer",
-      "company": "Digital Studios",
-      "duration": "Aug 2019 - May 2020",
-      "location": "New York, NY",
-      "description": "Focused on iOS application development using Swift and SwiftUI. Worked closely with designers to implement pixel-perfect UI designs and smooth animations.",
-      "responsibilities": [
-        "Built 3 iOS applications using Swift and SwiftUI with modern architecture patterns",
-        "Implemented complex UI animations and custom transitions",
-        "Integrated Core Data for offline functionality and data persistence",
-        "Worked with HealthKit and CoreML for health and AI features",
-        "Achieved 99.9% crash-free rate through thorough testing"
-      ],
-      "technologies": ["Swift", "SwiftUI", "UIKit", "Core Data", "HealthKit", "CoreML", "TestFlight"]
-    },
-    {
-      "id": "4",
-      "position": "Junior Mobile Developer",
-      "company": "StartupHub",
-      "duration": "Jan 2019 - Jul 2019",
-      "location": "Seattle, WA",
-      "description": "Started my professional journey in mobile development, working on various startup projects. Gained hands-on experience with both iOS and Android development.",
-      "responsibilities": [
-        "Assisted in developing MVP for 2 startup applications",
-        "Fixed bugs and implemented feature enhancements based on user feedback",
-        "Participated in daily standups and sprint planning meetings",
-        "Learned best practices for mobile development and version control",
-        "Created technical documentation for implemented features"
-      ],
-      "technologies": ["Java", "Swift", "Android Studio", "Xcode", "Git", "Jira", "Scrum"]
-    },
-    {
-      "id": "5",
-      "position": "Mobile Development Intern",
-      "company": "TechLearn Academy",
-      "duration": "Jun 2018 - Dec 2018",
-      "location": "Remote",
-      "description": "Completed intensive mobile development internship program, working on real-world projects while learning from industry professionals.",
-      "responsibilities": [
-        "Completed 5 mobile app projects as part of the internship program",
-        "Learned iOS and Android development fundamentals",
-        "Collaborated with other interns on group projects",
-        "Received mentorship from senior developers",
-        "Presented final project to company stakeholders"
-      ],
-      "technologies": ["Swift", "Java", "Firebase", "SQLite", "REST API", "Git"]
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "SQLite",
+        "Drift",
+        "Firebase",
+        "CI/CD",
+        "Codemagic",
+        "Android",
+        "iOS",
+        "AES-256",
+        "Biometric Auth"
+      ]
     }
   ]
 }

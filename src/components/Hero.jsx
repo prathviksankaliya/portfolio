@@ -106,7 +106,10 @@ const Hero = ({ profile }) => {
                 whileHover={!isMobile ? { scale: 1.05 } : {}}
                 whileTap={{ scale: 0.95 }}
               >
-                <span className="stat-value">{stat.value}{stat.suffix}</span>
+                <span className="stat-value">
+                  {stat.value}
+                  <span style={{ fontSize: '0.7em' }}>{stat.suffix}</span>
+                </span>
                 <span className="stat-label">{stat.label}</span>
               </motion.div>
             ))}

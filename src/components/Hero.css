@@ -136,30 +136,41 @@
 
 .hero-stats {
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem;
   margin-bottom: 2rem;
+  align-items: flex-start;
 }
 
 .stat-item {
   text-align: center;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  position: relative;
+  min-width: 100px;
 }
 
 .stat-value {
-  display: block;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 800;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  line-height: 1;
+  display: flex;
+  align-items: baseline;
+  gap: 0.1rem;
 }
 
 .stat-label {
-  display: block;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: #777;
-  margin-top: 0.25rem;
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
 }
 
 .hero-buttons {
@@ -825,20 +836,25 @@
   }
 
   .hero-stats {
-    flex-wrap: wrap;
-    gap: 1.5rem; /* Increased gap */
-    margin-bottom: 2.5rem; /* Increased spacing */
-    padding: 1rem 0; /* Added padding */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    padding: 1rem 0;
+    justify-items: center;
   }
 
   .stat-item {
-    flex: 1 1 45%;
-    min-width: 100px;
-    padding: 0.5rem; /* Added padding */
+    padding: 0.5rem;
+    min-width: auto;
   }
 
   .stat-value {
-    font-size: 1.5rem;
+    font-size: 2rem;
+  }
+
+  .stat-label {
+    font-size: 0.8rem;
   }
 
   .hero-buttons {
@@ -1017,17 +1033,26 @@
   }
 
   .hero-stats {
-    gap: 1.25rem; /* Increased gap */
-    margin-bottom: 2rem; /* Increased spacing */
-    padding: 0.75rem 0; /* Added padding */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding: 0.75rem 0;
+    justify-items: center;
   }
 
   .stat-item {
-    padding: 0.5rem; /* Added padding */
+    padding: 0.5rem;
+    min-width: auto;
+  }
+
+  .stat-value {
+    font-size: 1.8rem;
   }
 
   .stat-label {
-    margin-top: 0.3rem; /* Increased spacing */
+    font-size: 0.75rem;
+    line-height: 1.2;
   }
 
   /* Adjust scroll indicator for mobile */

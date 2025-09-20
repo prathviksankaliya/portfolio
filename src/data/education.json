@@ -2,50 +2,64 @@
   "education": [
     {
       "id": 1,
-      "institution": "University of Technology",
-      "degree": "Bachelor of Science in Computer Science",
-      "duration": "2014 - 2018",
-      "location": "San Francisco, CA",
-      "gpa": "3.8/4.0",
+      "institution": "Dharmsinh Desai University",
+      "degree": "Master of Computer Applications (MCA)",
+      "duration": "2022 - 2024",
+      "location": "Nadiad, Gujarat",
+      "gpa": "8.58 CPI",
       "achievements": [
-        "Dean's List for 4 semesters",
-        "President of Computer Science Club",
-        "Completed senior project on machine learning applications"
+        "Participated in DUHacks 2.0 National Hackathon",
+        "Finalist in CYBER SHADEZ 2023 Hackathon (5th place at GLS University)"
       ],
       "coursework": [
-        "Data Structures & Algorithms",
-        "Web Development",
-        "Database Systems",
-        "Software Engineering",
-        "Machine Learning",
-        "Computer Networks"
+        "Advanced Data Structures & Algorithms",
+        "Software Architecture & Design Patterns",
+        "Mobile Application Development",
+        "Database Management Systems"
+      ]
+    },
+    {
+      "id": 2,
+      "institution": "Saurashtra University",
+      "degree": "Bachelor of Computer Applications (BCA)",
+      "duration": "2019 - 2022",
+      "location": "Rajkot, Gujarat",
+      "gpa": "8.61 CGPA",
+      "achievements": [
+        "Best Coder Award (2019–2022 batch at Harivandana College)",
+        "Active participation in coding competitions and technical events"
+      ],
+      "coursework": [
+        "Programming in C/C++",
+        "Object-Oriented Programming with Java",
+        "Operating Systems",
+        "Computer Networks",
+        "Web Technologies",
+        "Database Systems"
       ]
     }
   ],
   "certifications": [
     {
       "id": 1,
-      "name": "AWS Certified Solutions Architect",
-      "issuer": "Amazon Web Services",
+      "name": "DUHacks 2.0 National Hackathon Participation",
+      "issuer": "Dharmsinh Desai University",
       "date": "2023",
-      "credentialId": "AWS-123456",
-      "url": "https://aws.amazon.com/certification/"
+      "url": "https://drive.google.com/file/d/1FhzVy_SJbqZ_fi7iOELCxdK7x47Dg1-U/view"
     },
     {
       "id": 2,
-      "name": "React Developer Certification",
-      "issuer": "Meta",
-      "date": "2022",
-      "credentialId": "META-789012",
-      "url": "https://www.coursera.org/professional-certificates/meta-react-native"
+      "name": "CYBER SHADEZ 2023 Techathon",
+      "issuer": "GLS University",
+      "date": "2023",
+      "url": "https://drive.google.com/file/d/1l9CTU6KriaYCnqgQQ-Q97ujUayRUyCdF/view"
     },
     {
       "id": 3,
-      "name": "MongoDB Certified Developer",
-      "issuer": "MongoDB University",
+      "name": "Best Coder of BCA Batch 2019-2022",
+      "issuer": "Harivandana College",
       "date": "2022",
-      "credentialId": "MDB-345678",
-      "url": "https://university.mongodb.com/certification"
+      "url": "https://www.harivandanacollege.org/"
     }
   ]
 }

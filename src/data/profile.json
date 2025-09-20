@@ -1,50 +1,50 @@
 {
   "personal": {
-    "name": "John Anderson",
-    "title": "Senior Mobile Developer",
-    "email": "john.anderson@example.com",
-    "phone": "+1 (555) 123-4567",
-    "location": "San Francisco, CA",
-    "tagline": "Crafting exceptional mobile experiences with 5+ years of expertise in iOS, Android, and Flutter development. Passionate about creating intuitive, performant apps that users love.",
+    "name": "Prathvik Sankaliya",
+    "title": "Mobile Software Engineer",
+    "email": "prathviksankaliya@gmail.com",
+    "phone": "+91 97238 16724",
+    "location": "Ahmedabad, Gujarat, India",
+    "tagline": "Building secure, offline-first, and scalable mobile applications with Flutter and modern architectures.",
     "roles": [
-      "Mobile App Developer",
-      "iOS Specialist",
-      "Android Expert",
       "Flutter Developer",
-      "UI/UX Enthusiast"
+      "Mobile App Engineer",
+      "Cross-Platform Specialist",
+      "App Deployment Expert",
+      "Architecture Enthusiast"
     ],
     "resume": "/resume.pdf"
   },
   "about": {
-    "description": "I'm a passionate mobile developer with over 5 years of experience building high-quality applications for iOS and Android platforms. My journey began with native iOS development using Swift, expanded to Android with Kotlin, and now includes cross-platform solutions with Flutter. I believe in writing clean, maintainable code and creating user experiences that delight. When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or mentoring junior developers.",
+    "description": "I am a passionate Mobile Software Engineer with 2+ years of industry experience, specializing in Flutter and cross-platform mobile development for iOS and Android. My expertise lies in architecting offline-first, server-driven UI applications, implementing secure authentication, and building scalable apps with robust data synchronization strategies. With 6+ apps published on Google Play Store and 3+ apps on the App Store, I have a proven track record of delivering production-ready, high-performance mobile solutions that meet business and user needs.",
     "highlights": [
-      "Specialized in native iOS and Android development",
-      "Expert in cross-platform solutions with Flutter",
-      "Strong focus on performance optimization and user experience",
-      "Published 15+ apps with over 1M+ combined downloads"
+      "Specialized in Flutter and cross-platform mobile app development",
+      "Architected offline-first and server-driven UI applications",
+      "Strong focus on security (biometric auth, AES-256 encryption, credential storage)",
+      "Published 6+ apps on Google Play Store and 3+ apps on App Store/TestFlight"
     ],
     "stats": [
       {
         "label": "Years Experience",
-        "value": "5",
+        "value": "2",
         "suffix": "+",
         "icon": "experience"
       },
       {
         "label": "Apps Published",
-        "value": "15",
+        "value": "9",
         "suffix": "+",
         "icon": "apps"
       },
       {
         "label": "Projects Completed",
-        "value": "30",
+        "value": "15",
         "suffix": "+",
         "icon": "projects"
       },
       {
-        "label": "Technologies Mastered",
-        "value": "12",
+        "label": "Technologies Expert",
+        "value": "10",
         "suffix": "+",
         "icon": "tech"
       }
@@ -52,36 +52,36 @@
     "journey_stats": [
       {
         "label": "Code Commits",
-        "value": "2.5",
+        "value": "1.5",
         "suffix": "K+",
-        "description": "Consistent contributions to projects"
+        "description": "Contributed consistently to multiple private & public repositories"
       },
       {
         "label": "App Downloads",
-        "value": "1",
-        "suffix": "M+",
-        "description": "Total downloads across all platforms"
+        "value": "50",
+        "suffix": "K+",
+        "description": "Across Google Play and App Store apps"
       },
       {
         "label": "Team Collaborations",
-        "value": "8",
+        "value": "6",
         "suffix": "+",
-        "description": "Cross-functional teams worked with"
+        "description": "Worked with cross-functional teams on enterprise projects"
       },
       {
         "label": "Problems Solved",
         "value": "500",
         "suffix": "+",
-        "description": "Technical challenges overcome"
+        "description": "From debugging, optimization to feature architecture"
       }
     ]
   },
   "social": {
-    "github": "https://github.com/johnanderson",
-    "linkedin": "https://linkedin.com/in/johnanderson",
-    "twitter": "https://twitter.com/johnanderson",
-    "medium": "https://medium.com/@johnanderson",
-    "appstore": "https://apps.apple.com/developer/id123456789",
-    "playstore": "https://play.google.com/store/apps/developer?id=JohnAnderson"
+    "github": "https://github.com/prathviksankaliya",
+    "linkedin": "https://linkedin.com/in/prathviksankaliya",
+    "twitter": "https://twitter.com/",
+    "medium": "https://medium.com/@prathvik.sankaliya.2024",
+    "appstore": "https://apps.apple.com/in/developer/",
+    "playstore": "https://play.google.com/store/apps/developer?id=IT+Craft+Solution"
   }
 }
