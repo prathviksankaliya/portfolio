@@ -1,0 +1,87 @@
+{
+  "personal": {
+    "name": "John Anderson",
+    "title": "Senior Mobile Developer",
+    "email": "john.anderson@example.com",
+    "phone": "+1 (555) 123-4567",
+    "location": "San Francisco, CA",
+    "tagline": "Crafting exceptional mobile experiences with 5+ years of expertise in iOS, Android, and Flutter development. Passionate about creating intuitive, performant apps that users love.",
+    "roles": [
+      "Mobile App Developer",
+      "iOS Specialist",
+      "Android Expert",
+      "Flutter Developer",
+      "UI/UX Enthusiast"
+    ],
+    "resume": "/resume.pdf"
+  },
+  "about": {
+    "description": "I'm a passionate mobile developer with over 5 years of experience building high-quality applications for iOS and Android platforms. My journey began with native iOS development using Swift, expanded to Android with Kotlin, and now includes cross-platform solutions with Flutter. I believe in writing clean, maintainable code and creating user experiences that delight. When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or mentoring junior developers.",
+    "highlights": [
+      "Specialized in native iOS and Android development",
+      "Expert in cross-platform solutions with Flutter",
+      "Strong focus on performance optimization and user experience",
+      "Published 15+ apps with over 1M+ combined downloads"
+    ],
+    "stats": [
+      {
+        "label": "Years Experience",
+        "value": "5",
+        "suffix": "+",
+        "icon": "experience"
+      },
+      {
+        "label": "Apps Published",
+        "value": "15",
+        "suffix": "+",
+        "icon": "apps"
+      },
+      {
+        "label": "Projects Completed",
+        "value": "30",
+        "suffix": "+",
+        "icon": "projects"
+      },
+      {
+        "label": "Technologies Mastered",
+        "value": "12",
+        "suffix": "+",
+        "icon": "tech"
+      }
+    ],
+    "journey_stats": [
+      {
+        "label": "Code Commits",
+        "value": "2.5",
+        "suffix": "K+",
+        "description": "Consistent contributions to projects"
+      },
+      {
+        "label": "App Downloads",
+        "value": "1",
+        "suffix": "M+",
+        "description": "Total downloads across all platforms"
+      },
+      {
+        "label": "Team Collaborations",
+        "value": "8",
+        "suffix": "+",
+        "description": "Cross-functional teams worked with"
+      },
+      {
+        "label": "Problems Solved",
+        "value": "500",
+        "suffix": "+",
+        "description": "Technical challenges overcome"
+      }
+    ]
+  },
+  "social": {
+    "github": "https://github.com/johnanderson",
+    "linkedin": "https://linkedin.com/in/johnanderson",
+    "twitter": "https://twitter.com/johnanderson",
+    "medium": "https://medium.com/@johnanderson",
+    "appstore": "https://apps.apple.com/developer/id123456789",
+    "playstore": "https://play.google.com/store/apps/developer?id=JohnAnderson"
+  }
+}

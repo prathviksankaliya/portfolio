@@ -1,0 +1,375 @@
+{
+  "categories": [
+    "All",
+    "Languages",
+    "iOS",
+    "Android",
+    "Flutter",
+    "Backend",
+    "Database",
+    "Tools",
+    "Cloud"
+  ],
+  "skills": [
+    {
+      "name": "Swift",
+      "category": "Languages",
+      "icon": "SiSwift",
+      "color": "#FA7343",
+      "level": 95
+    },
+    {
+      "name": "Kotlin",
+      "category": "Languages",
+      "icon": "SiKotlin",
+      "color": "#7F52FF",
+      "level": 90
+    },
+    {
+      "name": "Dart",
+      "category": "Languages",
+      "icon": "SiDart",
+      "color": "#0175C2",
+      "level": 85
+    },
+    {
+      "name": "Java",
+      "category": "Languages",
+      "icon": "FaJava",
+      "color": "#007396",
+      "level": 85
+    },
+    {
+      "name": "JavaScript",
+      "category": "Languages",
+      "icon": "SiJavascript",
+      "color": "#F7DF1E",
+      "level": 80
+    },
+    {
+      "name": "TypeScript",
+      "category": "Languages",
+      "icon": "SiTypescript",
+      "color": "#3178C6",
+      "level": 75
+    },
+    {
+      "name": "Python",
+      "category": "Languages",
+      "icon": "SiPython",
+      "color": "#3776AB",
+      "level": 70
+    },
+    {
+      "name": "Objective-C",
+      "category": "Languages",
+      "icon": "SiObjectivec",
+      "color": "#438EFF",
+      "level": 65
+    },
+    {
+      "name": "iOS",
+      "category": "iOS",
+      "icon": "SiIos",
+      "color": "#000000",
+      "level": 95
+    },
+    {
+      "name": "Xcode",
+      "category": "iOS",
+      "icon": "SiXcode",
+      "color": "#1575F9",
+      "level": 95
+    },
+    {
+      "name": "UIKit",
+      "category": "iOS",
+      "icon": "SiIos",
+      "color": "#2396F3",
+      "level": 90
+    },
+    {
+      "name": "SwiftUI",
+      "category": "iOS",
+      "icon": "SiSwift",
+      "color": "#FA7343",
+      "level": 85
+    },
+    {
+      "name": "Core Data",
+      "category": "iOS",
+      "icon": "SiApple",
+      "color": "#000000",
+      "level": 80
+    },
+    {
+      "name": "CocoaPods",
+      "category": "iOS",
+      "icon": "SiCocoapods",
+      "color": "#EE3322",
+      "level": 90
+    },
+    {
+      "name": "TestFlight",
+      "category": "iOS",
+      "icon": "SiApple",
+      "color": "#0D96F6",
+      "level": 85
+    },
+    {
+      "name": "Android",
+      "category": "Android",
+      "icon": "SiAndroid",
+      "color": "#3DDC84",
+      "level": 90
+    },
+    {
+      "name": "Android Studio",
+      "category": "Android",
+      "icon": "SiAndroidstudio",
+      "color": "#3DDC84",
+      "level": 90
+    },
+    {
+      "name": "Jetpack Compose",
+      "category": "Android",
+      "icon": "SiJetpackcompose",
+      "color": "#4285F4",
+      "level": 80
+    },
+    {
+      "name": "Gradle",
+      "category": "Android",
+      "icon": "SiGradle",
+      "color": "#02303A",
+      "level": 85
+    },
+    {
+      "name": "Material Design",
+      "category": "Android",
+      "icon": "SiMaterialdesign",
+      "color": "#757575",
+      "level": 90
+    },
+    {
+      "name": "Google Play",
+      "category": "Android",
+      "icon": "SiGoogleplay",
+      "color": "#414141",
+      "level": 85
+    },
+    {
+      "name": "Flutter",
+      "category": "Flutter",
+      "icon": "SiFlutter",
+      "color": "#02569B",
+      "level": 85
+    },
+    {
+      "name": "GetX",
+      "category": "Flutter",
+      "icon": "SiFlutter",
+      "color": "#8B1538",
+      "level": 80
+    },
+    {
+      "name": "Provider",
+      "category": "Flutter",
+      "icon": "SiFlutter",
+      "color": "#FF6F00",
+      "level": 85
+    },
+    {
+      "name": "Bloc",
+      "category": "Flutter",
+      "icon": "SiFlutter",
+      "color": "#1389FD",
+      "level": 75
+    },
+    {
+      "name": "Riverpod",
+      "category": "Flutter",
+      "icon": "SiFlutter",
+      "color": "#00A8E1",
+      "level": 70
+    },
+    {
+      "name": "Firebase",
+      "category": "Backend",
+      "icon": "SiFirebase",
+      "color": "#FFCA28",
+      "level": 90
+    },
+    {
+      "name": "Node.js",
+      "category": "Backend",
+      "icon": "SiNodedotjs",
+      "color": "#339933",
+      "level": 75
+    },
+    {
+      "name": "Express.js",
+      "category": "Backend",
+      "icon": "SiExpress",
+      "color": "#000000",
+      "level": 70
+    },
+    {
+      "name": "GraphQL",
+      "category": "Backend",
+      "icon": "SiGraphql",
+      "color": "#E10098",
+      "level": 65
+    },
+    {
+      "name": "REST API",
+      "category": "Backend",
+      "icon": "SiPostman",
+      "color": "#FF6C37",
+      "level": 90
+    },
+    {
+      "name": "SQLite",
+      "category": "Database",
+      "icon": "SiSqlite",
+      "color": "#003B57",
+      "level": 85
+    },
+    {
+      "name": "Realm",
+      "category": "Database",
+      "icon": "SiRealm",
+      "color": "#39477F",
+      "level": 80
+    },
+    {
+      "name": "MongoDB",
+      "category": "Database",
+      "icon": "SiMongodb",
+      "color": "#47A248",
+      "level": 75
+    },
+    {
+      "name": "PostgreSQL",
+      "category": "Database",
+      "icon": "SiPostgresql",
+      "color": "#4169E1",
+      "level": 70
+    },
+    {
+      "name": "Redis",
+      "category": "Database",
+      "icon": "SiRedis",
+      "color": "#DC382D",
+      "level": 65
+    },
+    {
+      "name": "Git",
+      "category": "Tools",
+      "icon": "SiGit",
+      "color": "#F05032",
+      "level": 95
+    },
+    {
+      "name": "GitHub",
+      "category": "Tools",
+      "icon": "SiGithub",
+      "color": "#181717",
+      "level": 95
+    },
+    {
+      "name": "GitLab",
+      "category": "Tools",
+      "icon": "SiGitlab",
+      "color": "#FC6D26",
+      "level": 85
+    },
+    {
+      "name": "Jira",
+      "category": "Tools",
+      "icon": "SiJira",
+      "color": "#0052CC",
+      "level": 85
+    },
+    {
+      "name": "Figma",
+      "category": "Tools",
+      "icon": "SiFigma",
+      "color": "#F24E1E",
+      "level": 80
+    },
+    {
+      "name": "Postman",
+      "category": "Tools",
+      "icon": "SiPostman",
+      "color": "#FF6C37",
+      "level": 90
+    },
+    {
+      "name": "VS Code",
+      "category": "Tools",
+      "icon": "SiVisualstudiocode",
+      "color": "#007ACC",
+      "level": 90
+    },
+    {
+      "name": "Docker",
+      "category": "Tools",
+      "icon": "SiDocker",
+      "color": "#2496ED",
+      "level": 70
+    },
+    {
+      "name": "AWS",
+      "category": "Cloud",
+      "icon": "SiAmazonaws",
+      "color": "#FF9900",
+      "level": 75
+    },
+    {
+      "name": "Google Cloud",
+      "category": "Cloud",
+      "icon": "SiGooglecloud",
+      "color": "#4285F4",
+      "level": 80
+    },
+    {
+      "name": "Azure",
+      "category": "Cloud",
+      "icon": "SiMicrosoftazure",
+      "color": "#0078D4",
+      "level": 65
+    },
+    {
+      "name": "Vercel",
+      "category": "Cloud",
+      "icon": "SiVercel",
+      "color": "#000000",
+      "level": 70
+    },
+    {
+      "name": "Netlify",
+      "category": "Cloud",
+      "icon": "SiNetlify",
+      "color": "#00C7B7",
+      "level": 75
+    }
+  ],
+  "expertise": [
+    {
+      "title": "iOS Development",
+      "description": "Expert in native iOS development with Swift and SwiftUI",
+      "icon": "FaApple"
+    },
+    {
+      "title": "Android Development",
+      "description": "Proficient in Android development with Kotlin and Jetpack Compose",
+      "icon": "FaAndroid"
+    },
+    {
+      "title": "Cross-Platform",
+      "description": "Building efficient cross-platform apps with Flutter",
+      "icon": "FaMobile"
+    }
+  ]
+}

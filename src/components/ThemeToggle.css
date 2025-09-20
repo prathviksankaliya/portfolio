@@ -1,0 +1,48 @@
+.theme-toggle {
+  position: fixed;
+  top: 1.5rem;
+  right: 5rem;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.3rem;
+  cursor: pointer;
+  box-shadow: 0 5px 20px rgba(102, 126, 234, 0.3);
+  z-index: 1001;
+  transition: all 0.3s ease;
+}
+
+.dark-mode .theme-toggle {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.theme-toggle:hover {
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+}
+
+.dark-mode .theme-toggle:hover {
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+}
+
+.toggle-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .theme-toggle {
+    top: auto;
+    bottom: 5rem;
+    right: 1rem;
+    width: 45px;
+    height: 45px;
+  }
+}

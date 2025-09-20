@@ -1,0 +1,51 @@
+{
+  "education": [
+    {
+      "id": 1,
+      "institution": "University of Technology",
+      "degree": "Bachelor of Science in Computer Science",
+      "duration": "2014 - 2018",
+      "location": "San Francisco, CA",
+      "gpa": "3.8/4.0",
+      "achievements": [
+        "Dean's List for 4 semesters",
+        "President of Computer Science Club",
+        "Completed senior project on machine learning applications"
+      ],
+      "coursework": [
+        "Data Structures & Algorithms",
+        "Web Development",
+        "Database Systems",
+        "Software Engineering",
+        "Machine Learning",
+        "Computer Networks"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "id": 1,
+      "name": "AWS Certified Solutions Architect",
+      "issuer": "Amazon Web Services",
+      "date": "2023",
+      "credentialId": "AWS-123456",
+      "url": "https://aws.amazon.com/certification/"
+    },
+    {
+      "id": 2,
+      "name": "React Developer Certification",
+      "issuer": "Meta",
+      "date": "2022",
+      "credentialId": "META-789012",
+      "url": "https://www.coursera.org/professional-certificates/meta-react-native"
+    },
+    {
+      "id": 3,
+      "name": "MongoDB Certified Developer",
+      "issuer": "MongoDB University",
+      "date": "2022",
+      "credentialId": "MDB-345678",
+      "url": "https://university.mongodb.com/certification"
+    }
+  ]
+}

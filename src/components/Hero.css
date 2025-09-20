@@ -1,0 +1,1092 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 80px 2rem 2rem;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.gradient-sphere {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.3;
+  animation: float 20s infinite ease-in-out;
+}
+
+.sphere-1 {
+  width: 600px;
+  height: 600px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  top: -200px;
+  left: -200px;
+  animation-delay: 0s;
+}
+
+.sphere-2 {
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  bottom: -100px;
+  right: -100px;
+  animation-delay: 5s;
+}
+
+.sphere-3 {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-delay: 10s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  25% { transform: translate(30px, -30px) scale(1.05); }
+  50% { transform: translate(-20px, 20px) scale(0.95); }
+  75% { transform: translate(-30px, -10px) scale(1.02); }
+}
+
+.hero-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  z-index: 1;
+}
+
+.hero-content {
+  z-index: 2;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+  border: 1px solid rgba(102, 126, 234, 0.3);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  color: #667eea;
+  font-weight: 600;
+}
+
+.badge-icon {
+  font-size: 1.2rem;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-subtitle {
+  font-size: 1.8rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+  min-height: 2.5rem;
+}
+
+.typed-text {
+  color: #667eea;
+  font-weight: 600;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  color: #777;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  max-width: 500px;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.stat-item {
+  text-align: center;
+  cursor: pointer;
+}
+
+.stat-value {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 0.25rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
+  transform: translateY(-2px);
+  color: white;
+}
+
+.btn-secondary {
+  background: white;
+  color: #667eea;
+  border: 2px solid #667eea;
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-color: transparent;
+}
+
+.app-store-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.store-button {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  background: #1a1a1a;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.store-button:hover {
+  background: #333;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.store-button svg {
+  font-size: 1.5rem;
+}
+
+.store-small {
+  display: block;
+  font-size: 0.7rem;
+  opacity: 0.9;
+}
+
+.store-large {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Three Orbital Rings System */
+.hero-visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+}
+
+.orbital-system {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Central Core */
+.central-core {
+  position: absolute;
+  width: 85px;
+  height: 85px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.7rem;
+  z-index: 10;
+  box-shadow: 0 20px 60px rgba(102, 126, 234, 0.6);
+}
+
+.central-core span {
+  font-size: 0.65rem;
+  margin-top: 0.25rem;
+  font-weight: 600;
+}
+
+/* Orbit Rings */
+.orbit-ring {
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* iOS Orbit - Inner */
+.ios-orbit {
+  width: 320px;
+  height: 320px;
+}
+
+.ios-path {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px dashed rgba(0, 0, 0, 0.12);
+  border-radius: 50%;
+}
+
+/* Android Orbit - Middle */
+.android-orbit {
+  width: 450px;
+  height: 450px;
+}
+
+.android-path {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px dashed rgba(61, 220, 132, 0.2);
+  border-radius: 50%;
+}
+
+/* Flutter Orbit - Outer */
+.flutter-orbit {
+  width: 580px;
+  height: 580px;
+}
+
+.flutter-path {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px dashed rgba(2, 86, 155, 0.2);
+  border-radius: 50%;
+}
+
+/* Orbit Technologies */
+.orbit-tech {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+}
+
+.orbit-tech.tech-1 {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.orbit-tech.tech-2 {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.orbit-tech.tech-3 {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.orbit-tech.tech-4 {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+/* Tech Icons */
+.tech-icon {
+  width: 100%;
+  height: 100%;
+  background: white;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.tech-icon:hover {
+  transform: scale(1.15);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.tech-icon span {
+  font-size: 0.65rem;
+  margin-top: 0.3rem;
+  font-weight: 600;
+  color: #666;
+}
+
+/* Platform Specific Colors */
+.ios-tech {
+  border: 2px solid #000;
+  color: #000;
+}
+
+.ios-tech:hover {
+  background: #000;
+  color: white;
+}
+
+.ios-tech:hover span {
+  color: white;
+}
+
+.android-tech {
+  border: 2px solid #3DDC84;
+  color: #3DDC84;
+}
+
+.android-tech:hover {
+  background: #3DDC84;
+  color: white;
+}
+
+.android-tech:hover span {
+  color: white;
+}
+
+.flutter-tech {
+  border: 2px solid #02569B;
+  color: #02569B;
+}
+
+.flutter-tech:hover {
+  background: #02569B;
+  color: white;
+}
+
+.flutter-tech:hover span {
+  color: white;
+}
+
+/* Orbital Dots */
+.orbital-dot {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(102, 126, 234, 0.6), 0 0 20px rgba(102, 126, 234, 0.3);
+  animation: pulse-glow 2s infinite ease-in-out;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.8;
+    box-shadow: 0 0 10px rgba(102, 126, 234, 0.6), 0 0 20px rgba(102, 126, 234, 0.3);
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 1;
+    box-shadow: 0 0 15px rgba(102, 126, 234, 0.8), 0 0 30px rgba(102, 126, 234, 0.4);
+  }
+}
+
+/* iOS Ring Dots */
+.dot-ios-1 {
+  top: 10%;
+  left: 20%;
+  animation-delay: 0s;
+}
+
+.dot-ios-2 {
+  bottom: 15%;
+  right: 25%;
+  animation-delay: 0.7s;
+}
+
+.dot-ios-3 {
+  top: 50%;
+  right: 5%;
+  animation-delay: 1.4s;
+}
+
+/* Android Ring Dots */
+.dot-android-1 {
+  top: 5%;
+  left: 30%;
+  width: 6px;
+  height: 6px;
+  animation-delay: 0.3s;
+}
+
+.dot-android-2 {
+  bottom: 10%;
+  left: 15%;
+  width: 7px;
+  height: 7px;
+  animation-delay: 0.9s;
+}
+
+.dot-android-3 {
+  top: 70%;
+  right: 10%;
+  animation-delay: 1.5s;
+}
+
+.dot-android-4 {
+  top: 30%;
+  left: 5%;
+  width: 6px;
+  height: 6px;
+  animation-delay: 2.1s;
+}
+
+/* Flutter Ring Dots */
+.dot-flutter-1 {
+  top: 15%;
+  right: 20%;
+  width: 5px;
+  height: 5px;
+  animation-delay: 0.5s;
+}
+
+.dot-flutter-2 {
+  bottom: 20%;
+  left: 10%;
+  width: 6px;
+  height: 6px;
+  animation-delay: 1s;
+}
+
+.dot-flutter-3 {
+  top: 60%;
+  left: 8%;
+  animation-delay: 1.6s;
+}
+
+.dot-flutter-4 {
+  bottom: 40%;
+  right: 5%;
+  width: 5px;
+  height: 5px;
+  animation-delay: 2.2s;
+}
+
+.dot-flutter-5 {
+  top: 35%;
+  right: 15%;
+  width: 7px;
+  height: 7px;
+  animation-delay: 2.8s;
+}
+
+/* Floating Particles */
+.floating-particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50%;
+}
+
+.particle:nth-child(1) {
+  top: 20%;
+  left: 15%;
+}
+
+.particle:nth-child(2) {
+  bottom: 25%;
+  right: 20%;
+}
+
+.particle:nth-child(3) {
+  top: 60%;
+  right: 15%;
+}
+
+/* Dark Mode */
+.dark-mode .hero-title { color: #ffffff; }
+.dark-mode .hero-subtitle { color: #b0b0b0; }
+.dark-mode .hero-description { color: #999; }
+
+.dark-mode .orbital-dot {
+  background: linear-gradient(135deg, #8b9cff 0%, #a67dd4 100%);
+  box-shadow: 0 0 12px rgba(139, 156, 255, 0.5), 0 0 24px rgba(166, 125, 212, 0.3);
+}
+
+.dark-mode .tech-icon {
+  background: #1a1a1a;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .tech-icon span {
+  color: #b0b0b0;
+}
+
+.dark-mode .ios-tech {
+  border-color: #666;
+  color: #fff;
+}
+
+.dark-mode .ios-tech:hover {
+  background: #333;
+}
+
+.dark-mode .android-tech:hover {
+  background: #3DDC84;
+  color: #1a1a1a;
+}
+
+.dark-mode .flutter-tech:hover {
+  background: #02569B;
+}
+
+.dark-mode .ios-path {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .android-path {
+  border-color: rgba(61, 220, 132, 0.1);
+}
+
+.dark-mode .flutter-path {
+  border-color: rgba(2, 86, 155, 0.1);
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #999;
+  font-size: 0.9rem;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.mouse {
+  width: 25px;
+  height: 40px;
+  border: 2px solid #999;
+  border-radius: 15px;
+  margin: 0.5rem auto 0;
+  position: relative;
+}
+
+.wheel {
+  width: 3px;
+  height: 8px;
+  background: #999;
+  border-radius: 2px;
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: scroll 2s infinite;
+}
+
+@keyframes scroll {
+  0% { opacity: 1; transform: translateX(-50%) translateY(0); }
+  100% { opacity: 0; transform: translateX(-50%) translateY(15px); }
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .hero-content {
+    order: 2;
+  }
+
+  .hero-visual {
+    order: 1;
+    min-height: 450px;
+  }
+
+  .hero-stats,
+  .hero-buttons,
+  .app-store-buttons {
+    justify-content: center;
+  }
+
+  .hero-description {
+    margin: 0 auto 2rem;
+  }
+
+  .orbital-system {
+    width: 450px;
+    height: 450px;
+  }
+
+  .central-core {
+    width: 80px;
+    height: 80px;
+    font-size: 1.5rem;
+  }
+
+  .ios-orbit {
+    width: 230px;
+    height: 230px;
+  }
+
+  .android-orbit {
+    width: 330px;
+    height: 330px;
+  }
+
+  .flutter-orbit {
+    width: 430px;
+    height: 430px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 80px 1.5rem 3rem;
+    min-height: auto;
+  }
+
+  .orbital-dot {
+    width: 6px;
+    height: 6px;
+  }
+
+  .dot-android-1,
+  .dot-android-2,
+  .dot-android-4,
+  .dot-flutter-1,
+  .dot-flutter-2,
+  .dot-flutter-4,
+  .dot-flutter-5 {
+    width: 5px;
+    height: 5px;
+  }
+
+  .hero-container {
+    gap: 3rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem; /* Increased spacing */
+  }
+
+  .hero-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem; /* Increased spacing */
+  }
+
+  .hero-description {
+    margin-bottom: 2rem; /* Increased spacing */
+    line-height: 1.9;
+  }
+
+  .hero-badge {
+    margin-bottom: 2rem; /* Increased spacing */
+  }
+
+  .hero-visual {
+    min-height: 400px;
+    padding: 1.5rem 0;
+  }
+
+  .orbital-system {
+    width: 380px;
+    height: 380px;
+  }
+
+  .central-core {
+    width: 65px;
+    height: 65px;
+    font-size: 1.2rem;
+  }
+
+  .central-core span {
+    font-size: 0.55rem;
+  }
+
+  /* Increased spacing between rings to prevent overlap */
+  .ios-orbit {
+    width: 160px;
+    height: 160px;
+  }
+
+  .android-orbit {
+    width: 250px;
+    height: 250px;
+  }
+
+  .flutter-orbit {
+    width: 340px;
+    height: 340px;
+  }
+
+  .tech-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .orbit-tech {
+    width: 40px;
+    height: 40px;
+  }
+
+  .tech-icon span {
+    font-size: 0.55rem;
+  }
+
+  .hero-stats {
+    flex-wrap: wrap;
+    gap: 1.5rem; /* Increased gap */
+    margin-bottom: 2.5rem; /* Increased spacing */
+    padding: 1rem 0; /* Added padding */
+  }
+
+  .stat-item {
+    flex: 1 1 45%;
+    min-width: 100px;
+    padding: 0.5rem; /* Added padding */
+  }
+
+  .stat-value {
+    font-size: 1.5rem;
+  }
+
+  .hero-buttons {
+    gap: 1rem; /* Increased gap */
+    margin-bottom: 2rem; /* Increased spacing */
+  }
+
+  /* Adjust scroll indicator for tablet */
+  .scroll-indicator {
+    position: fixed;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.85rem;
+  }
+  
+  .scroll-indicator span {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .mouse {
+    width: 22px;
+    height: 36px;
+    margin-top: 0.4rem;
+  }
+
+  .wheel {
+    width: 2.5px;
+    height: 7px;
+    top: 7px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+    padding: 70px 1rem 2rem;
+    min-height: auto;
+  }
+
+  .orbital-dot {
+    width: 5px;
+    height: 5px;
+    box-shadow: 0 0 8px rgba(102, 126, 234, 0.5);
+  }
+
+  .dot-android-1,
+  .dot-android-2,
+  .dot-android-4,
+  .dot-flutter-1,
+  .dot-flutter-2,
+  .dot-flutter-4,
+  .dot-flutter-5 {
+    width: 4px;
+    height: 4px;
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 0.7;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+  }
+
+  .hero-container {
+    gap: 2rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    margin-bottom: 1rem; /* Increased spacing */
+    line-height: 1.3;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 1.25rem; /* Increased spacing */
+  }
+
+  .hero-description {
+    margin-bottom: 2rem; /* Increased spacing */
+    line-height: 1.8;
+    padding: 0 0.5rem; /* Added horizontal padding */
+  }
+
+  .hero-badge {
+    padding: 0.5rem 1rem; /* Increased padding */
+    margin-bottom: 1.75rem; /* Increased spacing */
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem; /* Increased gap */
+    margin-bottom: 2rem; /* Increased spacing */
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    justify-content: center;
+    padding: 1rem 1.5rem; /* Increased padding */
+  }
+
+  .app-store-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem; /* Increased gap */
+  }
+
+  .store-button {
+    width: 100%;
+    justify-content: center;
+    padding: 0.9rem 1.5rem; /* Added padding */
+  }
+
+  .hero-visual {
+    margin-bottom: 1.5rem;
+    padding: 1rem 0;
+    min-height: 320px;
+  }
+
+  .orbital-system {
+    width: 320px;
+    height: 320px;
+  }
+
+  .central-core {
+    width: 55px;
+    height: 55px;
+    font-size: 1.1rem;
+  }
+
+  .central-core span {
+    margin-top: 0.15rem;
+  }
+
+  /* Better spacing between rings to prevent card overlap */
+  .ios-orbit {
+    width: 140px;
+    height: 140px;
+  }
+
+  .android-orbit {
+    width: 210px;
+    height: 210px;
+  }
+
+  .flutter-orbit {
+    width: 280px;
+    height: 280px;
+  }
+
+  .tech-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 0.9rem;
+    border-radius: 8px;
+  }
+
+  .orbit-tech {
+    width: 35px;
+    height: 35px;
+  }
+
+  .tech-icon span {
+    display: none;
+  }
+
+  .hero-stats {
+    gap: 1.25rem; /* Increased gap */
+    margin-bottom: 2rem; /* Increased spacing */
+    padding: 0.75rem 0; /* Added padding */
+  }
+
+  .stat-item {
+    padding: 0.5rem; /* Added padding */
+  }
+
+  .stat-label {
+    margin-top: 0.3rem; /* Increased spacing */
+  }
+
+  /* Adjust scroll indicator for mobile */
+  .scroll-indicator {
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.75rem;
+    opacity: 0.9;
+  }
+  
+  .scroll-indicator span {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    font-weight: 500;
+  }
+
+  .mouse {
+    width: 20px;
+    height: 32px;
+    margin: 0.3rem auto 0;
+    border-width: 1.5px;
+    opacity: 0.8;
+  }
+
+  .wheel {
+    width: 2px;
+    height: 6px;
+    top: 6px;
+  }
+}
+
+/* Dark mode scroll indicator adjustments */
+.dark-mode .scroll-indicator {
+  color: #b0b0b0;
+}
+
+.dark-mode .scroll-indicator span {
+  background: rgba(26, 26, 26, 0.9);
+  color: #b0b0b0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .mouse {
+  border-color: #666;
+}
+
+.dark-mode .wheel {
+  background: #666;
+}
+
+/* Hide scroll indicator on very small screens if needed */
+@media screen and (max-height: 600px) and (max-width: 480px) {
+  .scroll-indicator {
+    display: none;
+  }
+}

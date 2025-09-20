@@ -1,0 +1,461 @@
+.about {
+  padding: 80px 2rem;
+  background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-subtitle {
+  color: #667eea;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  border-radius: 2px;
+}
+
+/* Main Content Layout */
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* Left Side - Description Only */
+.about-text {
+  padding-right: 2rem;
+}
+
+.about-description {
+  font-size: 1.15rem;
+  line-height: 1.9;
+  color: #555;
+  text-align: justify;
+}
+
+/* Right Side - Cards */
+.about-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Highlights Grid - 2x2 */
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.highlight-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.highlight-card:hover {
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.15);
+}
+
+.highlight-icon {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.highlight-text {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* Stats Grid - 2x2 */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.stat-card-simple {
+  background: linear-gradient(135deg, #667eea08 0%, #764ba208 100%);
+  border: 1px solid rgba(102, 126, 234, 0.15);
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.stat-card-simple:hover {
+  background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+  border-color: rgba(102, 126, 234, 0.3);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.12);
+}
+
+.stat-icon-simple {
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.stat-content-simple {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-value {
+  font-size: 1.6rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 0.25rem;
+}
+
+/* Professional Journey Stats Section */
+.journey-stats-section {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 1px solid rgba(102, 126, 234, 0.1);
+}
+
+.journey-title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #1a1a1a;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+  position: relative;
+}
+
+.journey-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  border-radius: 2px;
+}
+
+.journey-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.journey-stat-card {
+  background: white;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.journey-stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.15);
+  border-color: #667eea;
+}
+
+.journey-stat-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.journey-stat-content {
+  flex: 1;
+}
+
+.journey-stat-value {
+  font-size: 2rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+.journey-stat-label {
+  font-size: 1rem;
+  color: #1a1a1a;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.journey-stat-description {
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Dark Mode */
+.dark-mode .about {
+  background: linear-gradient(180deg, #0a0a0a 0%, #1a1a1a 100%);
+}
+
+.dark-mode .journey-title {
+  color: #ffffff;
+}
+
+.dark-mode .journey-stat-card {
+  background: #1a1a1a;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .journey-stat-card:hover {
+  border-color: #667eea;
+}
+
+.dark-mode .journey-stat-label {
+  color: #ffffff;
+}
+
+.dark-mode .journey-stat-description {
+  color: #b0b0b0;
+}
+
+.dark-mode .section-title {
+  color: #ffffff;
+}
+
+.dark-mode .about-description {
+  color: #b0b0b0;
+}
+
+.dark-mode .highlight-card {
+  background: #1a1a1a;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .highlight-text {
+  color: #b0b0b0;
+}
+
+.dark-mode .stat-card-simple {
+  background: rgba(102, 126, 234, 0.05);
+  border-color: rgba(102, 126, 234, 0.2);
+}
+
+.dark-mode .stat-label {
+  color: #999;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about-text {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .about-description {
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .about-cards {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 60px 1.5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .about-description {
+    font-size: 1.05rem;
+  }
+
+  .highlights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .journey-stats-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+  }
+
+  .journey-title {
+    font-size: 1.5rem;
+  }
+
+  .journey-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .journey-stat-card {
+    padding: 1.25rem;
+  }
+
+  .journey-stat-value {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about {
+    padding: 50px 1rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .highlight-card {
+    padding: 1rem;
+  }
+
+  .highlight-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+
+  .highlight-text {
+    font-size: 0.85rem;
+  }
+
+  .stat-card-simple {
+    padding: 1.25rem;
+  }
+
+  .stat-value {
+    font-size: 1.4rem;
+  }
+
+  .stat-label {
+    font-size: 0.8rem;
+  }
+
+  .journey-stats-section {
+    margin-top: 2.5rem;
+  }
+
+  .journey-title {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+
+  .journey-stat-card {
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+
+  .journey-stat-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.1rem;
+  }
+
+  .journey-stat-value {
+    font-size: 1.5rem;
+  }
+
+  .journey-stat-label {
+    font-size: 0.9rem;
+  }
+
+  .journey-stat-description {
+    font-size: 0.8rem;
+  }
+}
