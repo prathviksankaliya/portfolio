@@ -25,7 +25,6 @@ import ScrollProgress from './components/ScrollProgress';
 import FloatingPhone from './components/FloatingPhone';
 import AnimatedBackground from './components/AnimatedBackground';
 // ThemeToggle is now integrated in Navbar
-import Loader from './components/Loader';
 
 // Error Boundary Component
 class ErrorBoundary extends React.Component {
@@ -59,15 +58,9 @@ class ErrorBoundary extends React.Component {
 
 function AppContent() {
   const { data } = useContentData();
-  const [loading, setLoading] = useState(true);
   const [activeSection, setActiveSection] = useState('home');
 
   useEffect(() => {
-    // Simulate loading time for assets
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-
     // Handle scroll to update active section
     const handleScroll = () => {
       const sections = ['home', 'about', 'skills', 'education', 'experience', 'projects', 'contact'];
@@ -91,12 +84,7 @@ function AppContent() {
 
   return (
     <>
-      <AnimatePresence>
-        {loading && <Loader />}
-      </AnimatePresence>
-
-      {!loading && (
-        <div className="App">
+      <div className="App">
           <AnimatedBackground />
           <ParticlesBackground />
           <ScrollProgress />
@@ -174,7 +162,6 @@ function AppContent() {
             </motion.section>
           </main>
         </div>
-      )}
     </>
   );
 }
