@@ -3,7 +3,7 @@
     {
       "id": "1",
       "title": "Smackdab",
-      "description": "Smackdab is a CRM mobile application that helps businesses manage leads, clients, activities, and sales pipelines efficiently, with full offline support.",
+      "description": "Your sales team's secret weapon — manage leads, close deals, and stay productive even without internet. Built for the field, powered by smart sync.",
       "longDescription": "Smackdab is an enterprise CRM mobile application built with Flutter and Dart. It features an offline-first sync engine, server-driven UI framework for dynamic forms and workflows, multi-device synchronization with priority queues, floating draggable recording widget, secure storage with hidden folders, and custom typeahead dropdowns for large datasets.",
       "platform": ["Flutter", "iOS", "Android"],
       "technologies": ["Flutter", "Dart", "BLoC", "REST APIs", "Drift (ORM)", "WorkManager", "SQLite"],
@@ -23,7 +23,7 @@
     {
       "id": "2",
       "title": "EchoScript",
-      "description": "A healthcare-focused app designed for doctors and patients to record or manage consultations with AI-driven transcription and note generation.",
+      "description": "Let AI take the notes while you focus on the patient. Record consultations, generate transcripts, and never miss a detail again.",
       "longDescription": "EchoScript is a healthcare consultation app built with Flutter and Dart. It allows doctors and patients to manage consultations with AI-based transcript generation, cross-platform synchronization via REST APIs, and robust audio recording with call interruption handling.",
       "platform": ["Flutter", "iOS", "Android"],
       "technologies": ["Flutter", "Dart", "BLoC", "REST APIs"],
@@ -36,12 +36,12 @@
       "appStoreUrl": "",
       "playStoreUrl": "",
       "githubUrl": "",
-      "featured": true
+      "featured": false
     },
     {
       "id": "3",
       "title": "iKnowa",
-      "description": "iKnowa is a property management platform enabling owners and contractors to manage projects, costs, and compliance efficiently, with data-driven insights.",
+      "description": "From blueprint to budget — track every nail, every cost, every phase. Smart property management for owners who mean business.",
       "longDescription": "iKnowa is a property management app built with Flutter and Dart. Features include auto-saving estimation forms, material costing, phase management workflows, and estimation summary modules for accurate project budgets and progress overview.",
       "platform": ["Flutter", "iOS", "Android"],
       "technologies": ["Flutter", "Dart", "GetX", "REST APIs", "Firebase"],
@@ -53,12 +53,12 @@
       "appStoreUrl": "",
       "playStoreUrl": "",
       "githubUrl": "",
-      "featured": true
+      "featured": false
     },
     {
       "id": "4",
       "title": "Status Saver",
-      "description": "A utility app enabling users to download and manage WhatsApp statuses (images/videos) directly in their gallery.",
+      "description": "That status disappears in 24 hours — but not if you save it first. Download, share, and repost WhatsApp moments effortlessly.",
       "longDescription": "Status Saver is an Android app built with Java and Material UI. It allows users to save, share, delete, and repost WhatsApp statuses efficiently using Media APIs for storage and retrieval.",
       "platform": ["Android"],
       "technologies": ["Android", "Java", "Material UI", "Media APIs"],
@@ -75,7 +75,7 @@
     {
       "id": "5",
       "title": "Picture Point",
-      "description": "A wallpaper customization app offering HD wallpapers across 25+ categories with offline access and personalization features.",
+      "description": "Your screen deserves better. Explore 25+ categories of stunning HD wallpapers — even offline. Make every unlock a visual treat.",
       "longDescription": "Picture Point is an Android app built with Java, Material UI, and Media APIs. Features include HD wallpapers across multiple categories, offline access, search/download/sharing functionality, and Pixel API integration for high-quality visuals.",
       "platform": ["Android"],
       "technologies": ["Android", "Java", "Material UI", "Media APIs", "Pixel API"],
@@ -88,12 +88,12 @@
       "appStoreUrl": "",
       "playStoreUrl": "",
       "githubUrl": "",
-      "featured": true
+      "featured": false
     },
     {
       "id": "6",
       "title": "Rideo",
-      "description": "Rideo is a ride-sharing mobile application enabling users to book, track, and manage rides with real-time updates.",
+      "description": "Tap. Match. Ride. Real-time tracking, smart driver matching, and seamless bookings — your next ride is just a tap away.",
       "longDescription": "Rideo app is built on Android with Firebase backend. It allows users to book rides, track them in real-time, and manage ride details efficiently. Features include driver-passenger matching, authentication, and secure data storage.",
       "platform": ["Android"],
       "technologies": ["Android", "Java", "Firebase"],
@@ -105,7 +105,7 @@
       "appStoreUrl": "",
       "playStoreUrl": "",
       "githubUrl": "",
-      "featured": true
+      "featured": false
     }
   ]
 }

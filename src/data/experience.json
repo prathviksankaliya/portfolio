@@ -12,7 +12,7 @@
         "Integrated biometric authentication (Face ID, Fingerprint) with AES-256 encryption for secure access and optimized local data storage.",
         "Implemented secure credential storage using Google Credential Manager (Android) and iOS Keychain with Associated Domains.",
         "Configured Codemagic CI/CD pipelines for automated Android and iOS builds and deployment.",
-        "Published and maintained 6+ apps on Google Play Store and 3+ apps on App Store/TestFlight, ensuring production-ready releases."
+        "Published and maintained 9+ apps on Google Play Store and 5+ apps on App Store/TestFlight, ensuring production-ready releases."
       ],
       "technologies": [
         "Flutter",

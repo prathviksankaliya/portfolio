@@ -16,12 +16,12 @@
     "resume": "/resume.pdf"
   },
   "about": {
-    "description": "I am a passionate Mobile Software Engineer with 2+ years of industry experience, specializing in Flutter and cross-platform mobile development for iOS and Android. My expertise lies in architecting offline-first, server-driven UI applications, implementing secure authentication, and building scalable apps with robust data synchronization strategies. With 6+ apps published on Google Play Store and 3+ apps on the App Store, I have a proven track record of delivering production-ready, high-performance mobile solutions that meet business and user needs.",
+    "description": "I am a passionate Mobile Software Engineer with 2+ years of industry experience, specializing in Flutter and cross-platform mobile development for iOS and Android. My expertise lies in architecting offline-first, server-driven UI applications, implementing secure authentication, and building scalable apps with robust data synchronization strategies. With 9+ apps published on Google Play Store and 5+ apps on the App Store, I have a proven track record of delivering production-ready, high-performance mobile solutions that meet business and user needs.",
     "highlights": [
       "Specialized in Flutter and cross-platform mobile app development",
       "Architected offline-first and server-driven UI applications",
       "Strong focus on security (biometric auth, AES-256 encryption, credential storage)",
-      "Published 6+ apps on Google Play Store and 3+ apps on App Store/TestFlight"
+      "Published 9+ apps on Google Play Store and 5+ apps on App Store/TestFlight"
     ],
     "stats": [
       {
@@ -32,7 +32,7 @@
       },
       {
         "label": "Apps Published",
-        "value": "9",
+        "value": "14",
         "suffix": "+",
         "icon": "apps"
       },
